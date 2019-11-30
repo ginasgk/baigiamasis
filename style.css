@@ -64,6 +64,7 @@ nav {
     padding-left: 144px;
     margin-top: 196px;
     margin:auto;
+    line-height: 1.5;
   }
   .logo2{
     position: relative;
@@ -84,7 +85,6 @@ nav {
   }  
 hr.line{
   border-top: 1px solid #fff;
-  /* border-bottom: 1px solid #fff; */
   width:70px;
   margin-left:144px;
   margin-top:30px;
@@ -100,6 +100,7 @@ hr.line{
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
+  cursor: pointer;
  }
 .DownloadButton:hover{
   background: white;
@@ -111,12 +112,10 @@ hr.line{
   margin: auto;
   margin-top:-430px;
   margin-right: 200px;
-  /* margin-left: 600px; */
   width: 360px;
   height: 424px;
   background-color: white;
-  font-family: 'Montserrat', sans-serif;
-  
+  font-family: 'Montserrat', sans-serif;  
 }
 .form-title{
   display: inline-block;
@@ -124,17 +123,13 @@ hr.line{
   height: 57px;
   font-size: 14px;
   background-color: #F5F5F5;
- 
-
+  text-align: center;
 }
 .subscription {
   position: relative;
   padding: 20px;
   background-color: #f1f1f1;
 }
-
-
-
 .social{
   position: relative;
   width: auto;
@@ -176,10 +171,68 @@ li:hover{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+}
+.about{
+  height: 596px;
+  width: 100%;
+  background-color: #1C1C1C;
+}
+.logo-3{
+display:flex;
+padding-left: 200px;
+padding-top: 220px;
+}
+#about-header{
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-left:750px;
+  margin-top: -320px;
+}
+hr.line-2{
+  border-top: 2px;
+  border-color: #E27866;
+  width:200px;
+  margin-left:750px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.about-texts{
+  font-size: 14px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin-left:750px;
+  margin-bottom:24px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.about-icon-text{
+  
+  margin-left:750px;
+  
+}
+.about-icon{
+  padding-top: 15px;
+  float: left;
+  
+}
+h3{
+  display:inline-block;
+  color:white;
+  font-size: 15px;
+  padding-left:20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  /* align-content: center; */
+}
+.about-texts-2{
+  display: flex;
+  color:white;
+  font-size: 15px;
+  margin-top: 0;
+  padding-left:20px; 
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
 
 }
-
-
- 
 
