@@ -16,16 +16,40 @@
           <img src="/Users/ginaskamarovas/Desktop/Code Academy/baigiamasis/Materials/logo.svg"></a>
         <ul class="desktop-menu">
           <li>
-            <a href="#">Features</a>
+              <a href="#">
+                  <label>
+                    <input type="radio" name="link" />
+                    <span>
+                      Features
+                    </span>
+                  </label>
           </li>
           <li>
-            <a href="#">About</a>
+              <a href="#">
+                  <label>
+                    <input type="radio" name="link" />
+                    <span>
+                      About
+                    </span>
+                  </label>
           </li>
           <li>
-            <a href="#">Pricing</a>
+              <a href="#">
+                  <label>
+                    <input type="radio" name="link" />
+                    <span>
+                      Pricing
+                    </span>
+                  </label>
           </li>
           <li>
-            <a href="#">Reviews</a>
+              <a href="#">
+                  <label>
+                    <input type="radio" name="link" />
+                    <span>
+                      Reviews
+                    </span>
+                  </label>
           </li>
           <li>
             <a href="#">Contact</a>
@@ -47,19 +71,30 @@
       <form action="subs">
         <div class="form-title">
           <h2>Try Your <span style="color: #E27866">FREE</span> Trial Today</h2>
-          <!-- <p>Your details</p> -->
         </div>
 
         <div class="subscription" style="background-color:white">
-          <p>Your details</p>
+          <p class="details"><b>Your details</b></p>
           <input type="text" placeholder="First name" name="First name" required>
           <input type="text" placeholder="Last name" name="Last name" required>
           <input type="text" placeholder="Phone number" name="Phone number" required>
         </div>
-
-        <div class="container">
-          <input type="submit" value="Subscribe">
+        <p class="detail"><b>Type of subscription</b></p>
+        <container class="buttons">
+            <form action="#">
+                <p>
+                  <input type="radio" id="test1" name="radio-group" checked>
+                  <label for="test1"><b>MONTHLY</b></label>
+                </p>
+                <p>
+                  <input type="radio" id="test2" name="radio-group">
+                  <label for="test2"><b>YEARLY</b></label>
+          </p></container>
+          <div class="container">
+          <input type="submit" value="GET STARTED">
         </div>
+ 
+        
       </form>
     </div>
   </section>

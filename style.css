@@ -10,7 +10,7 @@ body {
 header {
     position: relative;
     top: 0;
-    width: 100%;
+    width: auto;
     /* z-index: 2; */
     background-color: #1C1C1C;
     padding: 10px;
@@ -22,18 +22,58 @@ nav {
     align-items: center;
     justify-content: space-between;
     height: 100%;
-  }
+}
+a {
+  color: #E27866;
+  text-decoration: none;
+  /* display: inline-block; */
+  
+}
+
+a span:after {
+  width: 0;
+  /* margin-top: 30px; */
+  display: block;
+  background: #E27866;
+  height: 1px;
+  transition: all .3s ease-in-out;
+  content: "";
+  float: right;
+  
+  
+}
+
+a span:focus {
+  color:#E27866;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label input {
+  display: none;
+}
+
+label input:checked + span:after, label input + span:hover:after  {
+  width: 100%;
+  float: left;
+}
+
+label input:checked + span {
+  color: white;
+}
   
   nav ul li {
     display: inline-block;
     margin-right: 45px;
-
-  }
+ }
   
   nav ul li a {
     color: #707070;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    
   }
   /* .frontpage {
     width: auto;
@@ -109,26 +149,154 @@ hr.line{
 }
 
  form {
+  position: relative;
   margin: auto;
   margin-top:-430px;
   margin-right: 200px;
   width: 360px;
-  height: 424px;
+  height: 420px;
   background-color: white;
   font-family: 'Montserrat', sans-serif;  
+  border: none;
+  border-radius: 7px 7px 0 0;
 }
 .form-title{
   display: inline-block;
+  border-radius: 7px 7px 0 0;
   width: 360px;
-  height: 57px;
+  height: 60px;
   font-size: 14px;
   background-color: #F5F5F5;
   text-align: center;
+  
+  
 }
 .subscription {
   position: relative;
   padding: 20px;
   background-color: #f1f1f1;
+}
+
+.details{
+  margin: 8px;
+  margin-left:30px;
+  /* font-size:16px; */
+}
+.detail{
+  /* margin: 8px; */
+  margin-left:50px;
+}
+input[type=text]{
+  border: 0;
+  width: 260px;
+  background: transparent;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #D8D8D8;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left:20px;
+  padding-left: 20px;
+  padding-top: 25px;
+  outline: none;
+  
+}
+input[type=submit]{
+  border:none;
+  width: 360px;
+  height: 57px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #41D395;
+  text-align: center;
+  margin-top:20px;
+  border-radius: 0 0 7px 7px;
+}
+
+.buttons{
+  display: flex;
+  margin-left:20px;
+  padding-left: 20px;
+  margin-top:-15px;
+  
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+
+}
+[type="radio"]:checked + label,
+
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 15px;
+    
+}
+[type="radio"]:checked + label:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #41D395;
+  border-radius: 100%;
+  background: #fff;
+  
+
+border: 2px #41D395 solid;
+
+}
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #41D395;
+    border-radius: 100%;
+    background: #fff;
+    
+  
+  border: 2px #41D395 solid;
+  opacity: 0.5;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #41D395;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    
+    
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    
 }
 .social{
   position: relative;
@@ -158,7 +326,7 @@ ul li {
   display: flex;
   margin-right: 107px;
 }
-li:hover{
+.social-icon li:hover{
   opacity: 0.5;
   transition: 0.35s ease-in-out;
 }
@@ -223,6 +391,7 @@ h3{
   padding-left:20px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  opacity: 0.9;
   /* align-content: center; */
 }
 .about-texts-2{
@@ -233,6 +402,7 @@ h3{
   padding-left:20px; 
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  opacity: 0.9;
 
 }
 
