@@ -1,27 +1,37 @@
  .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 body {
     margin: 0;
   }
   
+
 header {
     position: relative;
     top: 0;
-    width: auto;
+    width: 100%;
     /* z-index: 2; */
     background-color: #1C1C1C;
     padding: 10px;
     box-sizing: border-box;
+    padding-right: 144px;
   }
   
 nav {
     display: flex;
+    margin:auto;
+    width:100%;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+   
+}
+.main-logo{
+    
+    padding-left: 144px;
+
 }
 a {
   color: #E27866;
@@ -75,13 +85,6 @@ label input:checked + span {
     font-family: 'Montserrat', sans-serif;
     
   }
-  /* .frontpage {
-    width: auto;
-    margin: 0 auto;
-    position:relative;
-    
-    } */
-    
   .banner {
     height: 639px;
     width: 100%;
@@ -353,7 +356,7 @@ ul li {
 
 
 .about{
-  height: 596px;
+  height: 600px;
   width: 100%;
   background-color: #1C1C1C;
 }
@@ -579,6 +582,11 @@ hr.line-4{
   color:#86878B;
 
 }
+.three:hover{
+  background-color: #ededed;
+  color:#86878B;
+
+}
 .three{
   font-size: 16px;
   width: 343px;
@@ -660,7 +668,6 @@ hr.line-6{
 }
 
 .message-image {
-  
   display: flex;
   /* position: relative; */
   /* margin-left:30px; */
@@ -744,4 +751,13 @@ hr.line-6{
 .social-icons  {
   display: flex;
   padding-top: 30px;
+  padding-left: 144px;
+
  }
+.footer-p{
+  margin:auto;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #919191;
+
+}
